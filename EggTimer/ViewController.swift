@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         progressBar.progress = 0.0
         let hardness: String? = sender.currentTitle
         let minutes = eggTimes[hardness!]!
-        let totalTime = minutes // * 60
+        let totalTime = minutes * 60
         var secondsPass = 0
         titleLabel.text = hardness
         
